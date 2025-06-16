@@ -1,0 +1,194 @@
+/* === Kart Genel Yapı === */
+.post-card {
+  position: relative; /* confirm-box için önemli */
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 16px auto;
+  max-width: 600px;
+  transition: transform 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+}
+
+/* === Kart İçerikleri === */
+.post-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.post-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.post-user {
+  font-size: 0.9rem;
+  color: #888;
+  text-align: right;
+}
+
+/* === Butonlar ve Aksiyonlar === */
+.post-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.action-button-like,
+.action-button-comment {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #666;
+}
+
+.action-button-like.liked {
+  color: red;
+}
+
+.action-button-like:hover {
+  color: #e63946;
+}
+
+.action-button-comment:hover {
+  color: #394ae6;
+}
+
+.icon {
+  margin-right: 6px;
+}
+
+/* === Yorumlar === */
+.comments-section {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+
+.comment {
+  margin-bottom: 0.5rem;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.comment-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.comment-form input {
+  flex: 1;
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.comment-form button {
+  padding: 0.4rem 0.8rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* === Seçenekler Menüsü === */
+.post-options {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.options-icon {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.options-menu {
+  position: absolute;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.options-menu button {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.options-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+/* === Silme Onay Kutusu (confirm-box) === */
+.confirm-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  max-width: 300px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  z-index: 20;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.confirm-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.yes-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-btn {
+  background-color: #bdc3c7;
+  color: black;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-image-container {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}

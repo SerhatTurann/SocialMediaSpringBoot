@@ -1,0 +1,45 @@
+/* Temel yapı */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+
+/* Genel link görünümü */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content {
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* Kartlar veya içerik kutuları için */
+.card {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1rem;
+}
+
+/* Dokümantasyon linki */
+.read-the-docs {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Scrollbar temizliği (isteğe bağlı) */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

@@ -1,0 +1,89 @@
+.home-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 20px 20px 20px; /* üst padding 10px yapıldı */
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-height: 100vh; /* Sayfa yüksekliğine uyum için */
+}
+
+/* Panel boyutları */
+.left-panel,
+.right-panel {
+  width: 25%;
+  min-width: 200px;
+}
+
+.middle-panel {
+  width: 50%;
+}
+
+/* Ortak stil */
+.left-panel, .right-panel {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Shortcut ve modal butonları */
+.open-modal-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post-shortcuts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.post-shortcuts button {
+  background-color: #eaeaea;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.right-panel h3 {
+  margin-bottom: 10px;
+}
+
+.right-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right-panel li {
+  background-color: #efefef;
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .home-layout {
+    flex-direction: column;
+    padding: 10px 10px 20px 10px;
+  }
+
+  .left-panel,
+  .right-panel,
+  .middle-panel {
+    width: 100%;
+    min-width: auto;
+    margin-bottom: 20px;
+  }
+}
